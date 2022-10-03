@@ -1,0 +1,39 @@
+# Nmap 7.92 scan initiated Sat Oct  1 18:54:19 2022 as: nmap -sC -sV -oN initial 10.10.111.164
+Nmap scan report for 10.10.111.164
+Host is up (0.084s latency).
+Not shown: 994 closed tcp ports (conn-refused)
+PORT      STATE SERVICE     VERSION
+135/tcp   open  msrpc       Microsoft Windows RPC
+139/tcp   open  netbios-ssn Windows 7 Professional 7601 Service Pack 1 netbios-ssn
+5357/tcp  open  http        Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Service Unavailable
+49152/tcp open  msrpc       Microsoft Windows RPC
+49153/tcp open  msrpc       Microsoft Windows RPC
+49154/tcp open  msrpc       Microsoft Windows RPC
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 1h40m00s, deviation: 2h53m13s, median: 0s
+|_nbstat: NetBIOS name: DARK-PC, NetBIOS user: <unknown>, NetBIOS MAC: 02:03:3e:4d:c8:77 (unknown)
+| smb-os-discovery: 
+|   OS: Windows 7 Professional 7601 Service Pack 1 (Windows 7 Professional 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_7::sp1:professional
+|   Computer name: Dark-PC
+|   NetBIOS computer name: DARK-PC\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2022-10-01T13:55:27-05:00
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2022-10-01T18:55:29
+|_  start_date: 2022-10-01T18:54:39
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct  1 18:55:33 2022 -- 1 IP address (1 host up) scanned in 73.76 seconds

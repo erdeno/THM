@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Sat Oct  1 19:40:01 2022 as: nmap -sV --script vuln -o vuln https://oliverwoodflint.wordpress.com
+Unable to split netmask from target expression: "https://oliverwoodflint.wordpress.com"
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Sat Oct  1 19:40:11 2022 -- 0 IP addresses (0 hosts up) scanned in 10.30 seconds
